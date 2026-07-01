@@ -1,11 +1,12 @@
+<%-- webapp/WEB-INF/01_secure2.jsp --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Unsecured</title>
+    <title>Secured</title>
 </head>
 <body>
 <h1>
-    Unsecured
+    Secured
 </h1>
 <%-- 스크립틀릿 중 출력문법 --%>
 <h2>
