@@ -20,6 +20,10 @@
         <p>${status.first} (첫번째 요소인가?)</p>
         <p>${status.last} (마지막 요소인가?)</p>
     </c:forEach>
+    <%--  begin end (시작점, 끝점 모두 포함) / step 증가시키는 것. --%>
+    <c:forEach var="i" begin="1" end="10" step="3">
+        <p>${i}</p>
+    </c:forEach>
 </ul>
 
 <form method="post">
