@@ -14,4 +14,11 @@ public class JSTLServlet2 extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("/WEB-INF/step04/jstl2.jsp").forward(req, resp);
     }
+    
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String text = req.getParameter("text");
+        req.setAttribute("text", text);
+        req.getRequestDispatcher("/WEB-INF/step04/jstl2.jsp").forward(req, resp);
+    }
 }
