@@ -25,7 +25,7 @@ public class ElServlet extends HttpServlet {
         ServletContext context = getServletContext();
         context.setAttribute("name", "에드워드");
         // 톰캣에서 실행 중인 전체 스레드가 공유하는 서버 웹앱의 데이터 공간
-        req.getRequestDispatcher("/WEB-INF/step03/jstl.jsp")
+        req.getRequestDispatcher("/WEB-INF/step03/el.jsp")
                 .forward(req, resp);
     }
 }
