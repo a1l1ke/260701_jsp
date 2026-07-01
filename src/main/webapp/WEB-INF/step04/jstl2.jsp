@@ -8,6 +8,20 @@
 </head>
 <body>
 <h1>JSTL2</h1>
+
+<%-- 반복 --%>
+<ul>
+    <c:forEach var="item" items="${list}" varStatus="status">
+        <%-- var="item" --%>
+        <li>${item}</li>
+        <%--        <p>${status}</p>--%>
+        <p>${status.index} (0부터 시작)</p>
+        <p>${status.count} (1부터 시작)</p>
+        <p>${status.first} (첫번째 요소인가?)</p>
+        <p>${status.last} (마지막 요소인가?)</p>
+    </c:forEach>
+</ul>
+
 <form method="post">
     <input name="text">
     <input type="submit">
@@ -43,6 +57,7 @@
             도대체 뭘 입력하신 겁니까?
         </c:otherwise>
     </c:choose>
+
 </section>
 </body>
 </html>
