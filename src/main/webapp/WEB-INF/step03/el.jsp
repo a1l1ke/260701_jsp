@@ -17,8 +17,16 @@
     <%= request.getAttribute("name") %>은 황천의 츠가이 캐릭터 중 하나입니다
 </p>
 <p>
+    <%--  el parser가 타입을 알아서 해석해줌 --%>
     <%-- servlet에서 req.setAttribute로 전달 받은 것 --%>
     ${name}은 황천의 츠가이 캐릭터 중 하나입니다
+</p>
+<p>
+    ${data} <br>
+    <%-- 알아서 get을 붙여서 getValue1로 호출함 --%>
+    ${data.value1}
+    ${data.value2}
+    ${data.value3}
 </p>
 </body>
 </html>
