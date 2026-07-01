@@ -17,6 +17,8 @@ public class ElServlet extends HttpServlet {
         req.setAttribute("data", new Data(
                 "문자열", 42, true
         ));
+        req.setAttribute("data2", new Data2("공자왈맹자왈", 73, false));
+
         req.setAttribute("name", "요루");
         HttpSession session = req.getSession(); // 유저별로 데이터 공간이 주어진다
         session.setAttribute("name", "아사");

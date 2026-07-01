@@ -28,5 +28,11 @@
     ${data.value2}
     ${data.value3}
 </p>
+<p>
+    ${data2} <br>
+    ${data2.value1}
+    ${data2.value2}
+    ${data2.value3}
+</p>
 </body>
 </html>
