@@ -12,6 +12,7 @@ import java.io.IOException;
 public class ElServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute("name", "요루");
         req.getRequestDispatcher("/WEB-INF/step03/el.jsp")
                 .forward(req, resp);
     }
