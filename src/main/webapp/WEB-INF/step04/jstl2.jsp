@@ -26,6 +26,14 @@
     </c:forEach>
 </ul>
 
+<a href="/jstl">안정적이지 않다 (application context)</a>
+<a href=
+           "<c:url value="/jstl">
+                <c:param name="id" value="123456" />
+                <c:param name="name" value="kim윌리엄" />
+            </c:url>"
+<%-- 쿼리스트링으로 주입 가능 --%>
+>안정적이다 (application context)</a>
 <form method="post">
     <input name="text">
     <input type="submit">
